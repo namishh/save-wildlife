@@ -1,0 +1,91 @@
+.archive {
+  background-color: $green;
+  padding: 2rem;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    font-size: 3rem;
+    border: none;
+    @media screen and (max-width : 450px) {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    border-bottom: 2px solid $white;
+    background-color: $green;
+    color: $white;
+    font-family: "Rubik", sans-serif;
+    &:focus {
+      outline: none;
+    }
+    padding: .3rem;
+
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: white;
+    transform: translateX(-3rem) translateY(.8rem);
+  }
+}
+
+.articles {
+  margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.article {
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  gap: 2rem;
+  // height: 20rem;
+  width: 45rem;
+
+  @media screen and (max-width : 460px) {
+    width: 30rem;
+    height: auto;
+  }
+  h2 {
+    font-size: 2.4rem;
+    color: $green;
+    @media screen and (max-width : 460px) {
+      font-size: 1.8rem;
+    }
+  }
+  p{
+    font-size: 1.8rem;
+    color: $black;
+    line-height: 2.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 44rem;
+    @media screen and (max-width : 460px) {
+      width: 28rem;
+      font-size: 1.5rem;
+      line-height: calc(normal + 4px);
+    }
+  }
+
+  a:link, a:visited{
+    text-decoration: none;
+    color: $green;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+
+.text-div {
+  position: relative;
+}
+#visual {
+  position: absolute;
+  top: -15rem;
+  z-index: -123;
+  left: -10rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $white;
+  padding: 2rem;
+  @media screen and (max-width : 550px){
+    padding: 0;
+  }
+}

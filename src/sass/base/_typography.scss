@@ -1,0 +1,36 @@
+.heading-primary {
+  text-align: center;
+  color: $green;
+  margin-top: 5rem;
+  font-size: 4rem;
+  padding: 2rem;
+
+  @media screen and (max-width : 900px) {
+    font-size: 4rem;
+  }
+}
+
+.para {
+  font-size: 1.8rem;
+  color: $black;
+  margin: 1rem;
+  width: 70rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+
+  @media screen and (max-width : 1287px) {
+    width: 50rem;
+  }
+
+  @media screen and (max-width : 500px) {
+    width: 40rem;
+  }
+  @media screen and (max-width : 430px) {
+    width: 30rem;
+  }
+}
+
+.heading-white {
+  color: $white;
+}

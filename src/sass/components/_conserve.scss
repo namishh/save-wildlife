@@ -1,0 +1,35 @@
+.conserve-container {
+  position: relative;
+}
+
+
+.wave-flip {
+  transform: translateY(22.48rem) rotateY(180deg)
+}
+.conserve {
+  padding: 9rem 3rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width : 900px) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  gap: 7rem;
+  .image-group {
+    position: relative;
+    // width: 50%;
+
+    .img {
+      height: 50rem;
+      @media screen and (max-width : 1287px) {
+        height: 30rem;
+      }
+    }
+  }
+
+
+
+}

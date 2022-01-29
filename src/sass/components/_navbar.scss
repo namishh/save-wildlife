@@ -1,0 +1,88 @@
+.navbar{
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 36rem;
+  z-index: 23456;
+  transform: translateX(-36rem);
+  transition: .3s ease;
+}
+
+.show-nav {
+  transform: translateX(0rem);
+}
+
+.navbar-toggle{
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  color: $green;
+  top: 2rem;
+  font-size: 3rem;
+}
+
+.navbar-links {
+  margin-bottom: 1px solid green;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  font-size: 3rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: $green;
+}
+
+.open-nav{
+  box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.3);
+
+  height: 6rem;
+  width: 6rem;
+  font-size: 5rem;
+  background-color: $green;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  z-index: 123;
+  @media screen and (max-width : 400px) {
+    font-size: 3rem;
+  }
+
+  .line {
+    border-radius: 20px;
+    height: .3rem; 
+    width: 3.3rem;
+    background-color: $white;
+    position: relative;
+    z-index: 123;
+
+    &::before, &::after{
+      content: '';
+      z-index: 123;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      border-radius: inherit;
+    }
+
+    &::before {
+      top: -.9rem;
+    }
+    &::after {
+      top: .9rem;
+    }
+  }
+}

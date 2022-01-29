@@ -1,0 +1,80 @@
+.wave-1{
+  position: absolute;
+  bottom: -1px;
+  left: .5px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  svg{
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 206px;
+    transform: rotateY(180deg);
+  }
+  .shape-fill {
+      fill: $white;
+  }
+}
+
+.wave-4{
+  position: absolute;
+  top: -10rem;
+  left: .5px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  // transform: rotate(180deg);
+  svg{
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 206px;
+    transform: rotateY(180deg);
+  }
+  .shape-fill {
+      fill: $green;
+  }
+}
+
+
+.wave-small{
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  svg {
+    position: relative;
+    display: block;
+    width: calc(195% + 1.3px);
+    height: 81px;
+  }
+  .shape-fill {
+    fill: $white;
+}
+}
+
+.wave-3{
+  position: absolute;
+  top: -9.8rem;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  svg{
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 99px;
+    transform: rotateY(180deg);
+  }
+  .shape-fill {
+    fill: $green;
+  }
+}

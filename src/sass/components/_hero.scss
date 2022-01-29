@@ -1,0 +1,29 @@
+.hero {
+  display : flex;
+  position : relative;
+  align-items : center;
+  margin : auto;
+  justify-content : center;
+  background : linear-gradient(to bottom right, rgba(#41c252, 0.9), rgba(#17882c, 0.8)), url(../../assests/img/hero-bg.jpg);
+  background-size: cover;
+  height : 95vh;
+  flex-direction: column;
+
+  &-text {
+    margin-left: 2rem;
+    font-size: 7rem;
+    color: $white;
+    text-align: center;
+
+    @media screen and (max-width : 1308px){
+        font-size: 5rem;
+    }
+    @media screen and (max-width : 954px){
+      font-size: 4rem;
+    }
+    @media screen and (max-width : 492px){
+      font-size: 3.6rem;
+    }
+  }
+
+}
